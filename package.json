@@ -1,0 +1,19 @@
+{
+  "name": "esbuild-swc-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "es": "node ./scripts/esbuild.js",
+    "swc": "npx swc ./src/app.jsx -o ./dist/swc/app.js  --config-file .swcrc"
+  },
+  "dependencies": {
+    "esbuild": "^0.16.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.59",
+    "@swc/core": "^1.3.24"
+  }
+}
